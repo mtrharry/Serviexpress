@@ -25,3 +25,14 @@
 #container a {
   text-decoration: none;
 }
+.menu{
+  display: inline-flex;
+  list-style: none;
+  margin-left: 60%;
+
+}
+li{
+  padding: 10px;
+  max-width: 100%;
+
+}
