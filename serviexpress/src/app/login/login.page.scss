@@ -1,5 +1,30 @@
+
+
 .inicios{
     max-width: 300px;
-    
+    position: absolute;
+    display: grid;
+    left: 50em;
+    top: 10em;
+    place-items: center;
+   
+}
+
+h1{
+
+    margin-top: 20px;
+    position: absolute;
+    font-size: 1.625rem;
+    left: 32.5em;
+    top: 1em;
+
+}
+.footer{
+    position: absolute;
+    left: 52em;
+    top: 25em;
+    display: grid;
+    place-items: center;
+
 
 }
