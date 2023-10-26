@@ -1,16 +1,24 @@
-
-
-.inicios{
-    width: 30%;
-    position: relative;
-    display: grid;
-    left: 57%;
-    top: 8%;
-    place-items: center;
+.input{
+    position: relative  ;
+    width: 300px;
+    left: 55%;
+    top: -20%;
    
 
 }
 
+li{
+    list-style: none;
+    padding: 10px;
+    top: 400%;
+
+}
+ul{
+    margin-left: 20%;
+    position: relative;
+    width: 300px;
+    
+}
 h1{
 
     margin-top: 6%;
@@ -18,16 +26,6 @@ h1{
     font-size: 1.625rem;
     left: 66%;
     top: 1em;
-}
-.footer{
-    position: absolute;
-    left: 23%;
-    top: 18%;
-    display: grid;
-    place-items: center;
-    
-    position: relative;
-
 }
 
 
