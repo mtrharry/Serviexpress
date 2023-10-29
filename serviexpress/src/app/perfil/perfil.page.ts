@@ -1,15 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-perfil',
+  templateUrl: './perfil.page.html',
+  styleUrls: ['./perfil.page.scss'],
 })
-export class HomePage {
-  slideOpts = {
-    initialSlide: 1,
-    speed: 400,
-  };
+export class PerfilPage implements OnInit {
+
   constructor(private router: Router) {}
   ingresahome() {
     
@@ -31,5 +28,12 @@ export class HomePage {
     
     this.router.navigate(['/pedidos']);
   }
-  
+  nombre: string = 'Juan Pérez';
+  rut: string = '12.345.678-9';
+  patente: string = 'AB-1234';
+  direccion: string = 'Calle Principal #123';
+  modelo: string = 'Bugatti Voiture Noire';
+  ngOnInit() {
+  }
+
 }

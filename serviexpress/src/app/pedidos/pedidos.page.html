@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">Serviexpress</ion-title> 
+    <ion-searchbar animated="true" placeholder="Buscador" class="buscador"></ion-searchbar>
+    <ul class="menu">
+      <li (click)="ingresahome()">inicio</li>
+      <li (click)="ingresaproductos()">productos</li>
+      <li (click)="ingresaservicio()">servicios</li>
+      <li (click)="ingresapedidos()">pedidos</li>
+      <li (click)="ingresaperfil()">perfil</li>
+    </ul>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items; let index = index">
+      <ion-avatar slot="start">
+        <img [src]="item.imagenUrl" alt="avatar" />
+      </ion-avatar>
+      <ion-label>
+        Item {{ index + 1 }}
+        <br>
+        Estado de pedido: {{ item.estado }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

@@ -2,24 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-
 import { IonicModule } from '@ionic/angular';
 
-import { RegistroPageRoutingModule } from './registro-routing.module';
+import { ServiciosPageRoutingModule } from './servicios-routing.module';
 
-import { RegistroPage } from './registro.page';
+import { ServiciosPage } from './servicios.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistroPageRoutingModule
+    ServiciosPageRoutingModule,
+   
   ],
-  declarations: [RegistroPage]
-})
-export class RegistroPageModule {
-  constructor() {}
   
-}
-
+  declarations: [ServiciosPage]
+})
+export class ServiciosPageModule {}

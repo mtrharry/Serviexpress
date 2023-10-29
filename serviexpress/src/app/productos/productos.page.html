@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">Serviexpress</ion-title> 
+    <ion-searchbar animated="true" placeholder="Buscador" class="buscador"></ion-searchbar>
+    <ul class="menu">
+      <li (click)="ingresahome()">inicio</li>
+      <li (click)="ingresaproductos()">productos</li>
+      <li (click)="ingresaservicio()">servicios</li>
+      <li (click)="ingresapedidos()">pedidos</li>
+      <li (click)="ingresaperfil()">perfil</li>
+    </ul>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div class="cards">
+  <ion-card *ngFor="let producto of productos" class="card1">
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <ion-card-header>
+      <ion-card-title>{{ producto.nombre }}</ion-card-title>
+      <ion-card-subtitle>Precio: ${{ producto.precio }}</ion-card-subtitle>
+      <ion-button (click)="onAdd(producto)" slot="end" color="primary">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+      <ion-button (click)="onRemove(producto)" slot="end" color="secondary">
+        <ion-icon name="remove"></ion-icon>
+      </ion-button>
+    </ion-card-header>
+    <ion-card-content>
+      {{ producto.nombre }} de alta calidad para automóviles.
+      <ion-input type="number" [(ngModel)]="producto.cantidad" placeholder="Cantidad"></ion-input>
+    </ion-card-content>
+    <ion-button>Comprar</ion-button>
+  </ion-card>
+</div>
+</ion-content>

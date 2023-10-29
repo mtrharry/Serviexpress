@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">Serviexpress</ion-title> 
+    <ion-searchbar animated="true" placeholder="Buscador" class="buscador"></ion-searchbar>
+    <ul class="menu">
+      <li>inicio</li>
+      <li>productos</li>
+      <li>servicios</li>
+      <li>pedidos</li>
+      <li>perfil</li>
+    </ul>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  
+  <div id="custom-calendar">
+    <div class="calendar-header">
+      <button (click)="previousMonth()">Anterior</button>
+      <h2>{{ currentMonth }}</h2>
+      <button (click)="nextMonth()">Siguiente</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Domingo</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+          <th>Sábado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let week of weeks">
+          <ng-container *ngFor="let day of week">
+            <td [ngClass]="{'disabled': !isDateInCurrentMonth(day)}">{{ day.getDate() }}</td>
+          </ng-container>
+        </tr>
+      </tbody>
+    </table>
+
+    <ion-list *ngIf="availableHours.length > 0">
+      <ion-item *ngFor="let hour of availableHours">
+        {{ hour }}
+      </ion-item>
+    </ion-list>
+    <div *ngIf="availableHours.length === 0">No hay horas disponibles para esta fecha.</div>
+  </div>
+</ion-content>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">reservahora</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

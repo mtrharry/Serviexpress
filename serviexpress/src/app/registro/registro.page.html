@@ -11,6 +11,7 @@
     <ul>
       <li>Usuario 
       </li>
+      
       <li>
         Nombre de usuario
       </li>
@@ -24,17 +25,18 @@
         Email
       </li>
     </ul>
-    <ion-input label-placement="floating" fill="solid" placeholder="Ingrese su usuario" class="input"></ion-input><br>
-    <ion-input label-placement="floating" fill="solid" placeholder="Contraseña" class="input"></ion-input><br>
-    <ion-input label-placement="floating" fill="solid" placeholder="Contraseña" class="input"></ion-input><br>
-    <ion-input label-placement="floating" fill="solid" placeholder="Contraseña" class="input"></ion-input><br>
-    <ion-input label-placement="floating" fill="solid" placeholder="Contraseña" class="input"></ion-input><br>
-
-    <div class="footer"> 
-      <p>Olvidaste tu Contraseña</p>
-      <p>No posee cuenta?</p>
-    <ion-button>Ingresar</ion-button>
-  </div>
+    <div class="inputs">
+      <ion-input label-placement="floating" fill="solid" placeholder="Ingrese su usuario" class="input"></ion-input><br>
+      <ion-input label-placement="floating" fill="solid" placeholder="Contraseña" class="input"></ion-input><br>
+      <ion-input label-placement="floating" fill="solid" placeholder="Contraseña" class="input"></ion-input><br>
+      <ion-input label-placement="floating" fill="solid" placeholder="Contraseña" class="input"></ion-input><br>
+      <ion-input label-placement="floating" fill="solid" placeholder="Contraseña" class="input"></ion-input><br>
+    </div>
+    <div class="botones">
+      <ion-button (click)="irlogin()">Registrar</ion-button>
+      <h4 (click)="irlogin()">Ya posee Cuenta? inicie sesion</h4>
+    </div>
+    
 </div>
   <ion-header collapse="condense">
     

@@ -1,0 +1,50 @@
+.titulo{
+    display: inline-flex;
+    
+}
+
+.buscador {
+    width: 400px;
+    display: inline-flex; /* Cambiamos de grid a inline-flex */
+    align-items: center;
+    left: 20%; /* En lugar de "left" */
+    position: relative;
+    
+  }
+  
+  .menu {
+    display: inline-flex;
+    list-style: none;
+    margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
+    max-width: 1000px;
+    position: relative;
+    left: 400px;
+  }
+  li {
+    padding: 10px;
+    max-width: 100%;
+    /* Eliminamos "position: relative" y "left" */
+  }
+  #custom-calendar {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.2rem; /* Aumenta el tamaño de fuente para que el calendario sea más grande */
+  }
+  
+  table {
+    width: 100%;
+    font-size: 1.2rem; /* Aumenta el tamaño de fuente para la tabla */
+  }
+  
+  th {
+    text-align: center;
+    padding: 0.7rem; /* Aumenta el relleno para que los encabezados sean más grandes */
+    font-weight: bold;
+  }
+  
+  td {
+    text-align: center;
+    padding: 0.7rem; /* Aumenta el relleno para que las celdas sean más grandes */
+    cursor: pointer;
+  }
+  

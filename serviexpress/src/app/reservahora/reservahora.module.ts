@@ -2,24 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-
 import { IonicModule } from '@ionic/angular';
 
-import { RegistroPageRoutingModule } from './registro-routing.module';
+import { ReservahoraPageRoutingModule } from './reservahora-routing.module';
 
-import { RegistroPage } from './registro.page';
+import { ReservahoraPage } from './reservahora.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistroPageRoutingModule
+    ReservahoraPageRoutingModule
   ],
-  declarations: [RegistroPage]
+  declarations: [ReservahoraPage]
 })
-export class RegistroPageModule {
-  constructor() {}
-  
-}
-
+export class ReservahoraPageModule {}

@@ -25,36 +25,30 @@ li {
   max-width: 100%;
   /* Eliminamos "position: relative" y "left" */
 }
-#container {
-  text-align: center;
+  .ia{
+    
+    position: relative;
+    width: 400PX;
+    left: 35em;
+    top: 10em;
+  }
+ 
+  .label{
+    font-weight: bold;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  }
+  .avatar{
+    display: block;
+    position: relative;
+    left: 38%;
+    width: 150px;
+    height: 150px;
+    top: 5em;
+  }
+.boton{
+    position: relative;
+    width: 400PX;
+    left: 35em;
+    top: 10em;
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-
-.card1 {
-  display: inline-block;
-  width: 300px;
 }
