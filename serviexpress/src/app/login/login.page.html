@@ -1,29 +1,41 @@
-<ion-header [translucent]="true">
-
-</ion-header>
-
-  <ion-content [fullscreen]="true" class="color">
-    <div class="capa1">
-        <h1>Bienvendio</h1>
-        <div class="inicios">
+<ion-content [fullscreen]="true">
+  <div id="container_login">
+    <div id="block1_1">
+      <div id="block1_1_2">
+        <img class="img" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
         
-            <p>Usuario</p>
-            <ion-input label-placement="floating" fill="solid" placeholder="Ingrese su usuario"></ion-input>
-
-            <p>Contraseña</p>
-            <ion-input label-placement="floating" fill="solid" placeholder="Contraseña"></ion-input>
-        </div>
-        <div class="footer"> 
-        
-          
-          <p>Eres empleado</p>
-          <ion-text>¿Eres empleado? </ion-text> <ion-text color="primary" routerLink="/login-empleados">Ingresa aqui</ion-text>
-        <ion-button (click)="ingresahome()">Ingresar</ion-button>
+      </div>
+      <div id="block1_1_3">
+        <h2 class="nombreemp">ServiExpress</h2>
       </div>
     </div>
-    
-<ion-footer>
-  
 
-</ion-footer>
+    <div id="block1_2">
+      <h1 class="Bienvenido">Bienvenido</h1>
+      <p class="subtitulo">Ingrese los datos para iniciar sesion</p>
+      <br>
+      <br>
+      <div class="inputs">
+        <ion-col size="7">
+          <ion-input class="inputdatos"  label="Nombre de usuario" label-placement="floating" fill="outline" placeholder="Ingresa Nombre de usuario"></ion-input>
+          <br>
+          <br>
+          <br>
+          <ion-input class="inputdatos" type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa contraseña"></ion-input>
+        </ion-col>
+        <div id="registro">
+          <ion-text>¿No estas registrado? </ion-text> <ion-text color="primary" routerLink="/registro">Registrate</ion-text>
+        </div>
+        <br>
+        <div id="registro">
+          <ion-text>¿Eres empleado? </ion-text> <ion-text color="primary" routerLink="/login-empleados">Ingresa aqui</ion-text>
+        </div>
+        <br>
+        <br>
+        <div id="boton">
+          <ion-button class="inputdatos" routerLink="/home">Iniciar sesión</ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
