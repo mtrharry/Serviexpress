@@ -1,0 +1,80 @@
+#contMenu {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#ff77cc, #0033CC, #33475b,rgb(255, 122, 89));
+  }
+
+
+.navbar {
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+
+.searchbar {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #0033CC;
+  padding: 10px;
+  font-size: 16px;
+} 
+
+#ContOption {
+    border: 2px solid rgb(12, 12, 12);
+    width: 70%;
+    height: 65%;
+    margin-top: 100px;
+    margin-left: 14%;
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+  }
+  
+
+#btnLogin {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+
+  .ContMenu1 {
+    width: calc(30% - 5px); /* El 5px es para el margen izquierdo */
+    height: 45%; /* Ajusta la altura según tus necesidades */
+    border: 2px solid black;
+    margin-right: 40px; /* Margen derecho entre elementos */
+  }
+
+  .imagen {
+    position: relative;
+    
+  }
+  
+  .imagen p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    
+  }
+  
+  

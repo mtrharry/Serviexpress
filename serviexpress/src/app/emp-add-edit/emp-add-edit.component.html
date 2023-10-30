@@ -1,0 +1,65 @@
+<div mat-dialog-title>
+  <h1>Formulario de empleado</h1>
+</div>
+<div mat-dialog-content class="content">
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Primer Nombre </mat-label>
+      <input matInput type="text" placeholder="Ex. Technical"> 
+    </mat-form-field> 
+    <mat-form-field appearance="outline">
+      <mat-label>Apellido </mat-label>
+      <input matInput type="text" placeholder="Ex. Babaji"> 
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Email </mat-label>
+      <input matInput type="email" placeholder="Ex. Technical"> 
+    </mat-form-field> 
+    <mat-form-field appearance="outline">
+      <mat-label>Fecha de nacimiento</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+  </div>
+  <br>
+  <div class="row">
+    <mat-radio-group aria-label="Selecciona el genero">
+      <mat-label><b>Genero</b></mat-label>
+      <mat-radio-button value="Masculino">Masculino</mat-radio-button>
+      <mat-radio-button value="Femenino">Femenino</mat-radio-button>
+      <mat-radio-button value="otro">Otro</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <br>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Selecciona la comuna</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let val of comuna" [value]="val">{{val}}
+         
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Cargo </mat-label>
+      <input matInput type="text" placeholder=""> 
+    </mat-form-field> 
+    <mat-form-field appearance="outline">
+      <mat-label>Dirección </mat-label>
+      <input matInput type="text" placeholder=""> 
+    </mat-form-field> 
+  </div>
+</div>
+<div mat-dialog-actions class="action">
+  <button mat-raised-button>Cancelar</button>
+  <button mat-raised-button color="primary">guardar</button>
+</div>
+

@@ -43,6 +43,30 @@ const routes: Routes = [
     path: 'reservahora',
     loadChildren: () => import('./reservahora/reservahora.module').then(m => m.ReservahoraPageModule) 
   },
+  {
+    path: 'login-empleados',
+      loadChildren: () => import('./login-empleados/login-empleados.module').then( m => m.LoginEmpleadosPageModule)
+  },
+  {
+    path: 'menu-empleados',
+    loadChildren: () => import('./menu-empleados/menu-empleados.module').then( m => m.MenuEmpleadosPageModule)
+  },
+  {
+    path: 'menu-empleados',
+    loadChildren: () => import('./menu-empleados/menu-empleados.module').then( m => m.MenuEmpleadosPageModule)
+  },
+  {
+    path: 'gestion-ventas',
+    loadChildren: () => import('./gestion-ventas/gestion-ventas.module').then( m => m.GestionVentasPageModule)
+  },
+  {
+    path: 'gestion-cuentas',
+    loadChildren: () => import('./gestion-cuentas/gestion-cuentas.module').then( m => m.GestionCuentasPageModule)
+  },
+  {
+    path: 'generar',
+    loadChildren: () => import('./generar/generar.module').then( m => m.GenerarPageModule)
+  },
   
 
 ];

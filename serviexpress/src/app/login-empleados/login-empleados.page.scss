@@ -1,0 +1,83 @@
+#container_login{
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 880px;
+    height: 600px;
+    margin-left: 27%;
+    margin-top: 60px;
+    display: flex;
+  }
+  
+  #block1_1{
+    
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 520px;
+    height: 597px;
+    background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
+  }
+  
+  #block1_1_2{
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin-top: 30%;
+    margin-left: 33%;
+  
+  }
+  
+  #block1_1_3{
+    width: 300px;
+    height: 70px;
+    margin-left: 13%;
+    margin-top: 3%;
+    
+  }
+  
+  #block1_2{
+    
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 455px;
+    width: 597px;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #design-input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ion-input-label {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  #registro {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-top: 15px;
+    
+  }
+  /*Intento para cambiar fondo de pantalla*/
+  .page-home {
+    background-image: linear-gradient(to bottom right,#ff77cc, #0033CC, #33475b,rgb(255, 122, 89));
+  }
