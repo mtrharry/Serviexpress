@@ -1,3 +1,60 @@
-<p>
-  ventas-add-edit works!
-</p>
+<div mat-dialog-title>
+  <h1>Formulario de ventas</h1>
+</div>
+<div mat-dialog-content class="content">
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Nombre del producto/servicio </mat-label>
+      <input matInput type="text" placeholder="Ex. Technical"> 
+    </mat-form-field> 
+
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Marca del producto </mat-label>
+      <input matInput type="email" placeholder="Ex. Technical"> 
+    </mat-form-field> 
+
+    <mat-form-field appearance="outline">
+      <mat-label>Fecha del servicio</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+  </div>
+  <br>
+  <div class="row">
+    <mat-radio-group aria-label="Selecciona el servicio">
+      <mat-label><b>Tipo de venta</b></mat-label>
+      <mat-radio-button value="Masculino">Producto</mat-radio-button>
+      <mat-radio-button value="Femenino">Servicio</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <br>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Selecciona la comuna del taller</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let val of comuna" [value]="val">{{val}}
+         
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Personal a cargo </mat-label>
+      <input matInput type="text" placeholder=""> 
+    </mat-form-field> 
+    <mat-form-field appearance="outline">
+      <mat-label>Dirección </mat-label>
+      <input matInput type="text" placeholder=""> 
+    </mat-form-field> 
+  </div>
+</div>
+<div mat-dialog-actions class="action">
+  <button mat-raised-button>Cancelar</button>
+  <button mat-raised-button color="primary">guardar</button>
+</div>
+
